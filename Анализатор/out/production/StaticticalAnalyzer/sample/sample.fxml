@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="645.0" prefWidth="738.0">
+         <children>
+            <Pane prefHeight="568.0" prefWidth="738.0">
+               <children>
+                  <BarChart fx:id="chart" layoutX="10.0" layoutY="40.0" prefHeight="350.0" prefWidth="712.0" title="Ранжир">
+                    <xAxis>
+                      <CategoryAxis fx:id="categoryAxis" prefHeight="144.0" prefWidth="661.0" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis prefHeight="246.0" prefWidth="28.0" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Button mnemonicParsing="false" onAction="#on_Download" text="Загрузить">
+         <padding>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets left="300.0" />
+         </GridPane.margin>
+      </Button>
+      <Label text="Загрузка целочисленных значений через запятую из текстового файла">
+         <GridPane.margin>
+            <Insets bottom="160.0" left="55.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>
